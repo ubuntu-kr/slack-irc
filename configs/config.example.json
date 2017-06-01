@@ -1,0 +1,8 @@
+{
+    "nickname": "bridgebot",
+    "server": "chat.freenode.org",
+    "token": "SLACK_TOKEN",
+    "channelMapping": {
+      "#slack-channel": "#irc-channel"
+    }
+  }
