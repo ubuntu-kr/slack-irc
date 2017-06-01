@@ -55,7 +55,8 @@ as long as they're present in the channel mapping.
 
 ### Example configuration
 Valid JSON cannot contain comments, so remember to remove them first!
-```js
+
+```json
 [
   // Bot 1 (minimal configuration):
   {
@@ -107,6 +108,7 @@ Valid JSON cannot contain comments, so remember to remove them first!
 ]
 ```
 
+
 `ircOptions` is passed directly to node-irc ([available options](http://node-irc.readthedocs.org/en/latest/API.html#irc.Client)).
 
 ## Personal IRC Client
@@ -142,4 +144,7 @@ $ npm run lint
 The deviations from the Airbnb Style Guide can be seen in  the [.eslintrc](.eslintrc) file.
 
 ## Docker
-A third-party Docker container can be found [here](https://github.com/caktux/slackbridge/).
+```bash
+sudo docker build -t slack-irc:latest .
+sudo docker run -d -P --name slack-irc -v /usr/src/app/configs /path/to/dir/of/configs/json
+```
