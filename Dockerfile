@@ -15,4 +15,4 @@ COPY . /usr/src/app
 RUN npm run build
 
 EXPOSE 8080
-CMD [ "npm", "start", "--", "--config", "configs/config.json" ]
+CMD npm start -- --config /usr/src/app/configs/config.json
