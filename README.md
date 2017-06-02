@@ -147,4 +147,4 @@ The deviations from the Airbnb Style Guide can be seen in  the [.eslintrc](.esli
 Put your `config.json` to your desired directory, then run:
 ```bash
 sudo docker build -t slack-irc:latest .
-sudo docker run -d -P --name slack-irc -v /usr/src/app/configs:/path/to/config/dir ubuntukorea/slack-irc:latest```
+sudo docker run -d -P --name slack-irc -v /path/to/config/dir:/usr/src/app/configs ubuntukorea/slack-irc:latest```
